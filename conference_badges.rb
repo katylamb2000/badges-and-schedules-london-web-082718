@@ -16,7 +16,7 @@ def assign_rooms (attendees)
   rooms
 end
 
-def printer 
+def printer (attendees)
   attendees.each {|x| puts "Hello, my name is #{x}."}
   badges
   attendees.each_with_index {|value, index| puts  "Hello, #{value}! You'll be assigned to room #{index + 1}!"}
