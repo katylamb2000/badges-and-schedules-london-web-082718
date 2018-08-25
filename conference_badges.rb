@@ -17,6 +17,8 @@ def assign_rooms (attendees)
 end
 
 def printer 
-  print batch_badge_creator.each {|x|}
+  attendees.each {|x| puts "Hello, my name is #{x}."}
+  badges
+  attendees.each_with_index {|value, index| puts  "Hello, #{value}! You'll be assigned to room #{index + 1}!"}
 
 end
